@@ -1,54 +1,116 @@
-.contacto {
-    display: flex;
-    gap: 24px
-}
-
-.contacto div {
+.bg{
+    margin: auto;
+    height: 100vh;
     width: 100%;
+    background-image: url(../../../img/bg/bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.datos p {
-    font-size: 14px;
-}
-
-.datos ul li {
-    font-size: 13px;
-}
-
-.formulario p label {
-    min-width: 80px;
+.contacto {
+    width: 100%;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
     align-items: center;
 }
+.contacto h2{
+    text-align: center;
+    color: white;
+}
 
-.formulario p input,
-.formulario p textarea {
+
+.contFormulario{
+    width: 400px;
+    height: 600px;
+    margin-top: 15px;
+    width: 50%;
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    padding: 1rem;
+}
+
+.formulario{
+
+    width: 90%;
+    margin: auto;
+    padding: 0.5rem;
+}
+.contL_I{
+    width: 90%;
+    margin: auto;
+    padding: 0.3rem;
+}
+.labelContact {
     width: 100%;
-    background: #ddd;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.inputContact {
+    width: 100%;
+    color: wheat;
+    background-color: transparent;
     border-radius: 5px;
-    border: 1px solid #999;
-    font-size: 14px;
-    padding: 6px 10px;
+    padding: 0.5rem 0;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+.inputContactSubmit{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.215);
+    border-radius: 5px;
+    padding: 0.5rem 0;
+    border: 2px solid rgba(255, 255, 255, 0.629);
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .formulario textarea {
     resize: none;
-    height: 150px;
+    height: 100px;
 }
 
-.formulario input [type="submit"] {
-    background: #6da9ed;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+.msgContact{
+    font-size: 1.2rem;
+    text-align: center;
     color: white;
-    font-size: 16px;
-    padding: 6px 20px;
-    width: auto;
-    position: relative;
-    left: 80px;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    font-weight: bold;
 }
 
-.formulario input [type="submit"]:hover {
-    background-color: #2e64a1;
+.datos{
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem; 
+}
+
+.titleTesti {
+    color: white
+}
+
+.datos ul{
+    width: 100%;
+}
+
+.liContact{
+    list-style: none;
+    margin: auto;
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    color: white;
+    font-weight: 300;
 }

@@ -1,15 +1,29 @@
 header {
-    background-color: #2e64a1;
-    padding: 16px 0;
+    background-image: radial-gradient(circle, #050c30, #00457b, #00839c, #00bf7a, #98f00f);
+    padding-top: 1rem;
 }
-
-header h1 {
-    color: white;
-    font-size: 40px;
-    font-weight: 100;
+.contHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contImgLogo{
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgLogo{
+    width: 75px;
+}
+.titleLogo{
+    width: 50%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 2px 3px #00ffa2;
+    font-size: 2rem;
+    font-weight: bold;
     font-style: italic;
-    display: inline-block;
-    position: relative;
-    bottom: 35px;
-    margin-left: 10px;
 }

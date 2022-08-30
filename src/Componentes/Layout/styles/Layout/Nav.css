@@ -1,6 +1,5 @@
 nav {
-    background-color: 6da9ed;
-    margin-bottom: 20px;
+    background-image: radial-gradient(circle, #050c30, #00457b, #00839c, #00bf7a, #98f00f);
 }
 
 nav ul {
@@ -15,18 +14,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 3px 6px;
+    padding: 0.2rem 0;
     display: block;
     text-align: center;
+    font-weight: 300;
+    font-size: 1.3rem;
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 nav ul li a.activo {
-    background-color: #4c76a5;
+    background-image: radial-gradient(circle, #00839c, #00bf7a, #98f00f);
 }
 

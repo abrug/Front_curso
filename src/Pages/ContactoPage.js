@@ -38,40 +38,48 @@ axios.post('http://localhost:3000/api/contacto', formData);
     }
 
     return (
-        <main className="holder contacto">
-            <div>
-                <h2> Contacto Rápido </h2>
+        <main className="contacto bg">
+            <div className='contFormulario'>
+                <h2 > Contacto Rápido </h2>
                 <form action="/contacto" method="post" onSubmit={handleSubmit} 
                 className="formulario">
-                    <p>
-                        <label> Nombre </label>
-                        <input type="text" name="nombre" value={formData.nombre} onChange={handleChange} ></input>
-                    </p>
-                    <p>
-                        <label> Email </label>
-                        <input type="text" name="email" value={formData.email} onChange={handleChange}></input>
-                    </p>
-                    <p>
-                        <label> Contacto </label>
-                        <input type="text" name="contacto" value={formData.contacto} onChange={handleChange}/>
-                    </p>
-                    <p>
-                        <label> Comentario </label>
-                        <textarea name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
-                    </p>
+                    <div className='contL_I'>
+                        <label className='labelContact'> Nombre </label>
+                        <input className='inputContact' type="text" required="require" name="nombre" value={formData.nombre} onChange={handleChange} ></input>
+                    </div>
+                    <div className='contL_I'>
+                        <label className='labelContact'> Email </label>
+                        <input className='inputContact' type="text" required="require" name="email" value={formData.email} onChange={handleChange}></input>
+                    </div>
+                    <div className='contL_I'>
+                        <label className='labelContact'> Contacto </label>
+                        <input className='inputContact' type="text" required="require" name="contacto" value={formData.contacto} onChange={handleChange}/>
+                    </div>
+                    <div className='contL_I'>
+                        <label className='labelContact'> Comentario </label>
+                        <textarea className='inputContact' name="mensaje" required="require" value={formData.mensaje} onChange={handleChange}></textarea>
+                    </div>
 
-                    {sending ? <p>Enviando...</p> : null}
-                    {msg ? <p> {msg} </p> : null}
-                    <p className='centrar'><input type="submit" value="Enviar"/></p>
+                    {sending ? <p className='msgContact'>Enviando...</p> : null}
+                    {msg ? <p className='msgContact'> {msg} </p> : null}
+                    <div className='contL_I'>
+                        <input className='inputContactSubmit' type="submit" value="Enviar"/>
+                    </div>
+                    
 
                 </form>
             </div>
             <div class="datos">
                 <h2> Otras vías de comunicación: </h2>
                 <ul>
-                    <li className='nav__li'> Contacto: 45567893</li>
-                    <li className='nav__li'> Email: transportex@contacto.com.ar</li>
+                    <li className='liContact'> Contacto: 45567893</li>
+                    <li className='liContact'> Email: travelnixcontacto@gmail.com</li>
+                    <li className='liContact'> Direccion: Calle Falsa 2345</li>
+                    <li className='liContact'> Instagram: PROXIMAMENTE</li>
                 </ul>
+                <div className="contImgLogo">
+                    <img src={require("../img/plane (2).png")} className="imgLogo" alt="Transportes X" />
+                </div>
             </div>
         </main>
     );

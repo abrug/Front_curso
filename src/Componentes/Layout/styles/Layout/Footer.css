@@ -1,8 +1,11 @@
 footer {
-    background-color: #ccc;
-    clear: both;
-    color: #333;
+    background-image: radial-gradient(circle, #050c30, #00457b, #006579, #007c4f, #598c07);
+    padding: 1rem;
+}
+.titleFooter{
     text-align: center;
-    padding: 50px 0;
-    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: italic;
 }

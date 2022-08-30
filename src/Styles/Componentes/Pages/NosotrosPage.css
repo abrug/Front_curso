@@ -1,45 +1,121 @@
-.historia p {
-    font-size: 12px;
+.bgNosotros{
+    /* background-image: url('../../../img/bg/bg5.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: black;
+    margin: auto;
+    padding: 1rem;
+}
+.Historia{
+    backdrop-filter: blur(2px);   
+    box-shadow: inset 2px 0 5px  #00457b,inset 0 2px 5px #00839c, 2px 0 5px #00bf7a, 0 2px 5px #98f00f;      
+       
+    background-image: url('../../../img/bg/bg5.jpg');
+    background-position: start center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 2rem 0;
+    border-radius: 15px 95px;
+}
+.contHistoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding: 2rem 0;
 }
 
-.personas {
+.Historia img {   
+    border-radius: 10%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.TitleStaff{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.Staff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2rem 0;
+
+}
+
+.Historia h1,h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+}
+.Historia p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+}
+.Personas {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
-.personas {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 18%;
+.Personas {
+    border: 1px solid rgb(57, 57, 57);
+    background-image: url('../../../img/bg/bg5.jpg');
+    background-position: start center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    width: 100%;
     text-align: center;
     padding: 13px;
     box-sizing: border-box;
+    padding: 1rem 3rem;
 }
 
-.personas .img {
+.Personas img {
+    
     border-radius: 50%;
     max-width: 60%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.personas h5,
-.personas h6 {
+.Personas h5,
+.Personas h6 {
     margin: 0;
     font-weight: normal;
-    color: #2e64a1;
+    color: #53a3ff;
 }
 
-.personas h5 {
-    font-size: 14px;
+.Personas h5 {
+    font-size: 2rem;
     margin-top: 5px;
 }
 
-.personas h6 {
-    font-size: 11px;
+.Personas h6 {
+    font-size: 1.5rem;
     font-style: italic;
+    margin-top: 5px;
 }
 
-.personas p {
-    color: #666;
-    font-size: 10px;
+.Personas p {
+    color: rgb(202, 202, 202);
+    font-size: 1rem;
 }

@@ -18,15 +18,14 @@ const NovedadesPage = (props) => {
     },[]);
 
     return (
-        <section className="holder">
-            <h2>Novedades</h2>
+        <section className="sectionNov">
             {loading ? (
-                <p>
+                <p className='Loading'>
                     Cargando...
                 </p>
             ):(
                 novedades.map(item => <NovedadItem key = {item.id} titulo = {item.titulo} 
-                subtitulo = {item.subtitlo} cuerpo = {item.cuerpo} imagen = {item.imagen}/>)
+                subtitulo = {item.subtitulo} cuerpo = {item.cuerpo} imagen = {item.imagen}/>)
             )}
             
         </section>

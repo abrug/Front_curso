@@ -1,40 +1,122 @@
-.bienvenidos {
-    width: 75%;
-    padding-right: 10px;
-    box-sizing: border-box;
+.contHome{
+    width: 100%;
+    margin: auto;
+    background-image: url(../../../img/bg/bg7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.testimonios {
-    width: 25%;
-}
-
-.columnas {
+.contHomePage{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.bienvenidos p {
-    font-size: 20px;
+.contTitleHome{
+    backdrop-filter: blur(3px);
+    background-color: rgba(78, 78, 78, 0.106);
+    width: 50%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 25px;
 }
-
-.testimonios {
-    background-color: #ccc;
-    padding: 16px;
-}
-
-.testimonios .cita {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 22px;
-    background-color: yellow;
-    display: block;
-}
-
-.testimonios .autor {
-    font-size: 10px;
+.titleHome{
+    width: 100%;
     text-align: center;
-    background-color: lightcoral;
-    display: block;
-    margin: 12px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.textHome{
+    width: 80%;
+    text-align: center;
+    margin: 25px auto;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: whitesmoke;
+    
+}
+
+.contTestimonios{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.titleTesti{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.carTestiBg{
+    margin-bottom: 10px;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    background-image: url(../../../img/bg/Camping.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.carTestiBg2{
+    margin-bottom: 10px;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    background-image: url(../../../img/bg/LegoFondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+}
+.cardTesti{
+    backdrop-filter: blur(5px);
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+.cardTesti:hover{
+    backdrop-filter: blur(1px);
+}
+.contImgHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.imgTestHome{
+    width: 50%;
+    border-radius: 50%;
+}
+.testimonio{
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.cita{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+.autor{
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color:white;
+    font-weight: 400;
 }

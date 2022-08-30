@@ -1,21 +1,13 @@
-
-// const Header = (props) => {
-//     return (
-//         <div>Header</div>
-    
-        
-//     )
-// }
-
-// export default Header;
 import './styles/Layout/Header.css';
 
 const Header = (props)=> {
     return (
         <header>
-            <div className='holder'>
-                {/* <img src="public/logo.png" width="100" alt="Transportes X" /> */}
-                <h1> Transportes X </h1>
+            <div className='contHeader'>
+                <div className="contImgLogo">
+                    <img src={require("../../img/plane (2).png")} className="imgLogo" alt="Transportes X" />
+                </div>
+                <h1 className="titleLogo"> Travel Nix </h1>
             </div>
         </header>
 

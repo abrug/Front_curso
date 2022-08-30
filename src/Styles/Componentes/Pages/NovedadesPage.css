@@ -1,0 +1,76 @@
+.sectionNov{
+    background-color: black;
+    padding: 2rem 0
+}
+.Loading{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(0, 255, 102);
+    text-shadow: 3px 2px 3px #00aaff;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    height: 100vh;
+}
+.novedades{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    background-color: rgba(208, 208, 208, 0.709);
+    border-radius:15px;
+    padding: 1rem;
+    margin:20px auto;
+}
+
+.headerNov{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.contImgNov{
+    width: 30%;
+    text-align: center;
+
+}
+.imgNov{
+    width:300px;
+    border-radius: 15px;
+}
+
+.contTextNov{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.titleNov{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 5px;
+    padding: 1rem 0;
+}
+.subTitleNov{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(84, 84, 84);
+    margin-bottom: 5px;
+}
+
+.cuerpoNov{    
+    font-size: 1.1rem;
+    text-align: start;
+    padding: 1rem 0;
+}
+
